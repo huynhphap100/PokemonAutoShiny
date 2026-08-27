@@ -1,0 +1,198 @@
+{
+  "name": "my_plan",
+  "loops": 1,
+  "continuous": false,
+  "jitter_min_ms": 0,
+  "jitter_max_ms": 0,
+  "nodes": [
+    {
+      "node_type": "start",
+      "next": 1,
+      "x": -14.0,
+      "y": 63.0
+    },
+    {
+      "seq": {
+        "name": "fishing_start",
+        "actions": [
+          {
+            "key": "'b'",
+            "event": "press",
+            "time": 0.6623,
+            "display": "B"
+          },
+          {
+            "key": "'b'",
+            "event": "release",
+            "time": 0.7628,
+            "display": "B"
+          },
+          {
+            "key": "Key.right",
+            "event": "press",
+            "time": 3.5052,
+            "display": "→"
+          },
+          {
+            "key": "Key.right",
+            "event": "release",
+            "time": 3.6343,
+            "display": "→"
+          },
+          {
+            "key": "Key.right",
+            "event": "press",
+            "time": 3.7734,
+            "display": "→"
+          },
+          {
+            "key": "Key.right",
+            "event": "release",
+            "time": 3.8673,
+            "display": "→"
+          },
+          {
+            "key": "Key.right",
+            "event": "press",
+            "time": 4.0838,
+            "display": "→"
+          },
+          {
+            "key": "Key.right",
+            "event": "release",
+            "time": 4.175,
+            "display": "→"
+          },
+          {
+            "key": "Key.down",
+            "event": "press",
+            "time": 4.7543,
+            "display": "↓"
+          },
+          {
+            "key": "Key.down",
+            "event": "release",
+            "time": 4.854,
+            "display": "↓"
+          },
+          {
+            "key": "Key.right",
+            "event": "press",
+            "time": 5.1175,
+            "display": "→"
+          },
+          {
+            "key": "Key.right",
+            "event": "release",
+            "time": 5.1966,
+            "display": "→"
+          },
+          {
+            "key": "Key.right",
+            "event": "press",
+            "time": 5.2765,
+            "display": "→"
+          },
+          {
+            "key": "Key.right",
+            "event": "release",
+            "time": 5.3561,
+            "display": "→"
+          },
+          {
+            "key": "Key.enter",
+            "event": "press",
+            "time": 6.3516,
+            "display": "↵"
+          },
+          {
+            "key": "Key.enter",
+            "event": "release",
+            "time": 6.4344,
+            "display": "↵"
+          },
+          {
+            "key": "Key.enter",
+            "event": "press",
+            "time": 7.1828,
+            "display": "↵"
+          },
+          {
+            "key": "Key.enter",
+            "event": "release",
+            "time": 7.2712,
+            "display": "↵"
+          }
+        ],
+        "step_count": 9,
+        "total_time": 7.27
+      },
+      "name": "fishing_start",
+      "repeats": 1,
+      "delay": 0.5,
+      "condition": null,
+      "next": 2,
+      "node_type": "seq",
+      "x": 219.0,
+      "y": 33.0
+    },
+    {
+      "node_type": "condition",
+      "condition": {
+        "type": "ocr",
+        "images": [],
+        "img_threshold": 0.85,
+        "ocr_checks": [
+          {
+            "region": [
+              578,
+              170,
+              750,
+              88
+            ],
+            "text": "even",
+            "mode": "contains"
+          }
+        ],
+        "timeout": 10.0,
+        "interval": 1.0,
+        "logic": "any",
+        "on_true": null,
+        "on_false": null
+      },
+      "on_true": null,
+      "on_false": 3,
+      "x": 465.79999999999995,
+      "y": 120.88000000000002
+    },
+    {
+      "seq": {
+        "name": "z",
+        "actions": [
+          {
+            "key": "'z'",
+            "event": "press",
+            "time": 0.7365,
+            "display": "Z"
+          },
+          {
+            "key": "'z'",
+            "event": "release",
+            "time": 0.8642,
+            "display": "Z"
+          }
+        ],
+        "step_count": 1,
+        "total_time": 0.86
+      },
+      "name": "z",
+      "repeats": 1,
+      "delay": 0.5,
+      "condition": null,
+      "next": null,
+      "node_type": "seq",
+      "x": 737.96,
+      "y": 217.20000000000002
+    }
+  ]
+}
